@@ -1,5 +1,5 @@
 # [e-commerce-site](https://www.behance.net/gallery/32503241/An-E-commerce-website)
-It's a e-commerce website made with PHP, MySQL, HTML5, jQuery, Javascript 
+It's a e-commerce website made with PHP, MySQL, HTML5, jQuery, Javascript.
 Sorry because there is no live version available but you can kinda see it here : 
 [Behance](https://www.behance.net/gallery/32503241/An-E-commerce-website)
 **Note that some UI elements have been changed and it looks more cooler**
@@ -10,7 +10,6 @@ Well, it's a pretty big project so I can't really put up en entire documentation
 
 #Why ?
 I made this site. Okay, cool. But I didn't know how to sell it. And tbh couldn't find any interested guys. So, It's kinda been living in my "www" folder. So, I decided to make it open source. 
-
 
 
 # But really dude, give me some idea...
