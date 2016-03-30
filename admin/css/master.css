@@ -1,0 +1,425 @@
+/*
+    - GLOBAL STYLES
+*/
+
+#warning {
+    padding: 10px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 4px;
+    display: none;
+    margin: 20px;
+}
+.warning {
+    width: 400px;
+    background: white;
+    color: #212121;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    z-index: 999999999;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.mdl-shadow--2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-shadow--3dp {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-shadow--4dp {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--6dp {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--16dp {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+    - END GLOBAL STYLES
+*/
+
+
+/*
+    - INPUTS
+*/
+
+input[type=submit] {
+    padding: 5px 8px;
+    background: #3498db;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #2980b9;
+}
+
+input[type=text] {
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #A9A9A9;
+    margin: 10px 0px;
+}
+
+input[type=password] {
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+}
+
+textarea {
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #A9A9A9;
+    margin: 10px 0px;
+}
+
+input[type=file] {
+    margin: 10px 0px;
+}
+select {
+    margin: 10px 0px;
+    padding: 15px;
+}
+input[type=checkbox] {
+    padding: 10px;
+}
+/*
+    - END INPUTS
+*/
+
+
+/*
+    - TYPOGRAPHY
+*/
+/*font faces*/
+@font-face {
+font-family: 'Helvetica-Light';
+font-style: normal;
+font-weight: normal;
+src: url('/store/fonts/HelveticaNeueLTStd-Lt.otf');
+}
+@font-face {
+font-family: 'Helvetica-UltraLight';
+font-style: normal;
+font-weight: normal;
+src: url('/store/fonts/HelveticaNeueLTStd-UltLt.otf');
+}
+@font-face {
+font-family: 'Helvetica-Thin';
+font-style: normal;
+font-weight: normal;
+src: url('/store/fonts/HelveticaNeueLTStd-Th.otf');
+}
+@font-face {
+font-family: 'Helvetica-Medium';
+font-style: normal;
+font-weight: normal;
+src: url('/store/fonts/HelveticaNeueLTStd-Md.otf');
+}
+@font-face {
+font-family: 'Helvetica-Bold';
+font-style: normal;
+font-weight: normal;
+src: url('/store/fonts/HelveticaNeueLTStd-Bd.otf');
+}
+
+/*font faces*/
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', serif;
+}
+body,
+html {
+    /*font-family: 'Helvetica Neue LT Std 45 Light', sans-serif;*/
+    color: #2e2e2e;
+    font-family: 'Helvetica-Light';
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.light {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2.4rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+
+/*
+    - END TYPOGRAPHY
+*/
+
+
+/*
+    - LOGIN FORM
+*/
+
+.login-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #1e1e1e;
+    color: white;
+}
+
+.login-form {
+    border-radius: 4px;
+    padding: 40px 100px;
+    background: #666666;
+}
+
+/*
+    - END LOGIN FORM
+*/
+
+
+/*
+    - ERROR DESIGN
+*/
+
+.globalerror {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #e74c3c;
+    color: white;
+    text-align: center;
+}
+
+.errorglobalcontent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#back {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.errorlogo {
+    font-family: "Courier";
+    font-size: 30px;
+}
+
+
+/*
+    - END ERROR DESIGN
+*/
+
+
+/*
+    - DASHBOARD
+*/
+
+.dashboard-nav-wrapper {
+    margin: 100px 0px 50px 0px;
+}
+
+.identifier {
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #212121;
+    padding: 5px;
+}
+
+.dashboard-nav-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dashboard-nav-wrapper ul li {
+    margin: 0px 8px 0px 0px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.dashboard-nav-wrapper ul li:hover {
+    border-bottom: 3px solid #4aa3df;
+}
+
+.activeLink {
+    border-bottom: 3px solid #4aa3df;
+}
+
+.storewrapper {
+    text-align: left;
+    margin: 30px 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+table img {
+    width: 60px;
+    height: 60px;
+}
+
+table th,
+td {
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.process a {
+    color: #2980b9;
+}
+
+#alert {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 999999999;
+    display: table;
+    text-align: center;
+}
+
+.alertcontent {
+    display: table-cell;
+    vertical-align: middle;
+}
+.closer_modal {
+    position: fixed;
+    z-index: 9999999999999;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#remove_item_wrapper {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove_item_content {
+    text-align: middle;
+    background: white;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    margin: 20px 0px;
+}
+
+.errorAdd {
+    color: red;
+    margin: 20px 0px;
+}
+th {
+    font-weight: bold;
+}
+.hiddenSize {
+    display: none;
+}
+.tableContainer {
+   padding: 0px 20px;
+}
+.remove {
+    color: #E34B4B;
+    cursor: pointer;
+}
+/*
+    - END DASHBOARD
+*/
