@@ -1,4 +1,3 @@
-	
 <?php
 session_start();
 $errcntr = 0;
@@ -16,7 +15,7 @@ if (!isset($_SESSION['login_token'])) {
 	exit;
 }
 
-include '../db.php';
+include '../../db.php';
 
 
 if (!isset($_POST['name']) || !isset($_POST['desc']) || !isset($_POST['price']) || !isset($_POST['stock'])) {

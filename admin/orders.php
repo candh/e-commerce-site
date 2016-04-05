@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Order Processing</title>
-	<?php
+<?php
 	session_start();
-	include 'db.php';
+	include '../db.php';
 	include 'styles.html';
 
 
@@ -21,6 +17,10 @@
 			exit;
 	}
 	?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Processing</title>
 </head>
 <body>
 	<section id="dashboard-super-wrapper">

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $response = "";
-include '../db.php';
+include '../../db.php';
 
 $action = "";
 $product_id = $_POST['product_id'];

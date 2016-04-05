@@ -1,5 +1,5 @@
 <?php
-	include '../db.php';	
+	include '../../db.php';	
 	$img_id = $_POST['img_id'];
 	$img_type = $_POST['type'];
 

@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Add Items</title>
-	<?php
+<?php
 	session_start();
-	include 'db.php';
+	include '../db.php';
 	include 'styles.html';
 	if (!isset($_SESSION['login_token'])) {
 		print "<div class='globalerror'>
@@ -19,6 +15,10 @@
 			exit;
 	}
 	?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Items</title>
 </head>
 <body>
 	<section id="dashboard-super-wrapper">

@@ -4,7 +4,7 @@
 		exit;
 	}
 	$response = "";
-	include '../db.php';
+	include '../../db.php';
 
 	if (!isset($_POST['order_id']) || !isset( $_POST['customer_id'])) {
 		$response .= "Something went wrong with the data";

@@ -1,6 +1,6 @@
 <?php
 		
-		include '../db.php';
+		include '../../db.php';
 
 		$response = "";
 		if (isset($_POST['product_id'])) {

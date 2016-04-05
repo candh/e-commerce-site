@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Products</title>
-	<?php
+<?php
 	session_start();
-	include 'db.php';
+	include '../db.php';
 	include 'styles.html';
 
 
@@ -22,7 +18,10 @@
 	}
 
 	?>
-</head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title></head>
 <body>
 	<section id="dashboard-super-wrapper">
 	<div class="container">

@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Admin :: Dashboard</title>
-	<?php
+<?php
 	$response = "";
 	session_start();
-	include 'db.php';
+	include '../db.php';
 	include 'styles.html';
 
 	if (!isset($_SESSION['login_token'])) {
@@ -210,6 +206,10 @@
 
 	
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin :: Dashboard</title>
 </head>
 <body>
 	<section id='dashboard_wrapper'>
