@@ -2,12 +2,7 @@
 	session_start();
 	$form_token = $_SESSION['token'];
 	$response = "";
-	$server = "localhost";
-	$usrname = "root";
-	$pass = "";
-	$db_name = "auth";
-
-	$db = new mysqli($server, $usrname, $pass, $db_name);
+	include("../../db.php");
 
 	if ($db) {
 	}
@@ -31,11 +26,13 @@
 		$pswd = sha1($password);
 	}
 
-	$stmt = $db->prepare("SELECT username FROM users WHERE username = ? AND pswd = ?");
+/*	$stmt = $db->prepare("SELECT `username` FROM `harshitc_candheshop`.`users` WHERE `username` = ? AND `pswd` = ?");
 	$stmt->bind_param('ss', $username, $pswd);
 	$stmt->execute();
-
-	$result = $stmt->get_result();
+*/
+$q = "SELECT `username` FROM `{$dbname}`.`users` WHERE `username` = '".$username."' AND `pswd` = '".$pswd."'";
+//$q = "SELECT * FROM `harshitc_candheshop`.`users` WHERE `username` = '{$username}' AND `pswd` = '{$pswd}'";
+$result = $db->query($q);
 	if ($result->num_rows > 0) {
 		$response .= "Successfully Logged In";
 		while ($row = $result->fetch_assoc()) {
