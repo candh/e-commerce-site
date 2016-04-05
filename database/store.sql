@@ -17,11 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `store`
+-- Database: `harshitc_candheshop`
 --
-CREATE DATABASE IF NOT EXISTS `store` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `store`;
-
 -- --------------------------------------------------------
 
 --
@@ -34,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   `product_id` int(11) DEFAULT NULL,
   `qty` int(11) DEFAULT NULL,
   `size` varchar(40) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -56,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `phone` varchar(40) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`customer_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
@@ -70,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `imgs_ref` (
   `product_code` int(11) DEFAULT NULL,
   `img_path` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`img_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 -- --------------------------------------------------------
 
@@ -97,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `shipping_phone` varchar(40) DEFAULT NULL,
   `shipping_email` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`order_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
@@ -111,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `order_details` (
   `order_qty` int(11) NOT NULL,
   `size` varchar(40) NOT NULL,
   `product_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -130,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `sold` int(11) NOT NULL,
   PRIMARY KEY (`product_code`),
   FULLTEXT KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 -- --------------------------------------------------------
 
@@ -143,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `product_details` (
   `product_code` int(11) NOT NULL,
   `category` varchar(40) NOT NULL,
   `size` varchar(40) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
