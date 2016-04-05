@@ -25,7 +25,7 @@ $(document).ready(function() {
                 success: function(response) {
                     $('#warning').html(response).fadeIn('fast');
                     if (response == "Successfully Logged In") {
-                        window.location.assign("/store/admin/index.php");
+                        window.location.assign("../admin/index.php");
                     }
                 },
             });
