@@ -67,14 +67,14 @@ else {
                                 <div class='productView-left big_img_wrap '>
                                     <div class='focusWindow'>
 
-                                          <img class='imgFocus' src='images/products/$imgpath'> 
+                                          <img class='imgFocus' src='/images/products/$imgpath'> 
 
                                     </div>
 
                                     <div id='mini_img_gallery_wrapper'>
                                         <p style='font-size:13px;'>More images for this product :</p>
                                         <br/>
-                                         <img class='activeImg' src='images/products/$imgpath'> 
+                                         <img class='activeImg' src='/images/products/$imgpath'> 
                                     ";
 
 
@@ -86,7 +86,7 @@ else {
                                         while ($row = $query->fetch_assoc()) {
                                             $img_path = $row['img_path'];
 
-                                            print "<img src='images/uploads/product_imgs/$img_path'>";
+                                            print "<img src='/images/uploads/product_imgs/$img_path'>";
 
                                         }
                                     }

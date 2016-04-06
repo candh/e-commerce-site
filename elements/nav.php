@@ -7,7 +7,7 @@
             <li><a href="/store">Home</a></li>
             <li><a href="#">Categories <i class="fa fa-angle-down"></i></a>
                 <ul>
-                    <li><a href='/store/products/all/box'>Boxes</a></li>
+                    <li><a href='products/all/box'>Boxes</a></li>
                     <li><a href="#">Clothes</li>
                 </ul>
             </li>
@@ -24,7 +24,7 @@
                 <li><a href="/store">Home</a> </li>
                 <li id="categories">  Categories <i class="fa fa-angle-down"></i>
                     <ul id="mob-na">
-                        <li><a href="/store/products/all/box" style="padding:10px;">Boxes</a></li>
+                        <li><a href="products/all/box" style="padding:10px;">Boxes</a></li>
                     </ul>
                 </li>
                 <li><a href="">Contact</a></li>
