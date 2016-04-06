@@ -53,7 +53,7 @@
 					<br/>	
 					
 					<?php
-						$sql = "SELECT * FROM `{$dbname}`.`products` WHERE `stock` = '1'";
+						$sql = "SELECT * FROM `{$db_name}`.`products` WHERE `stock` = '1'";
 						$query = $db->query($sql);
 
 						if ($query->num_rows > 0) {
