@@ -15,8 +15,6 @@
 			</div>";
 			exit;
 	}
-
-
 ?>
 <!DOCTYPE html>
 <html>
