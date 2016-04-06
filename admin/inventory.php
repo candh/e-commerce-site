@@ -10,7 +10,7 @@
 			<br/>
 			<h4>You do not have the permission to view this page</h4><br/>
 			<p>You better go back now!</p><br/>
-			<p id='back'><a href='http://localhost/store/'>Back</a></p>
+			<p id='back'><a href='..'>Back</a></p>
 			</div>
 			</div>";
 			exit;
@@ -21,8 +21,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin :: Dashboard</title>
-</head>
+	<title>Admin :: Dashboard</title></head>
 <body>
 	<section id='dashboard_wrapper'>
 		<div class="container">
@@ -54,7 +53,7 @@
 					<br/>	
 					
 					<?php
-						$sql = "SELECT * FROM products WHERE stock = '1'";
+						$sql = "SELECT * FROM `{$dbname}`.`products` WHERE `stock` = '1'";
 						$query = $db->query($sql);
 
 						if ($query->num_rows > 0) {
@@ -77,7 +76,7 @@
 
 								print "<tr'>
 								<td>$product_code</td>
-								<td><img src='/store/images/products/$product_img'></td>
+								<td><img src='../images/products/$product_img'></td>
 								<form action='' method='post' class='updateInventory' id='$product_code'>
 								<td><input type = 'text' maxlength='8' name='stock' id='stock_$product_code' value='$stock'></td>
 								<td id='status_$product_code'>

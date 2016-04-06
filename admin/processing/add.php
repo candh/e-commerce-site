@@ -49,7 +49,7 @@ else {
 // UPLOADING DATA TO THE DATABSE // CREATING A NEW PRODUCT
 //
 
-$sql = "INSERT INTO products(name, description, price, stock) VALUES('$name', '$desc', '$price', '$stock')";
+$sql = "INSERT INTO `{$dbname}`.`products` (name, description, price, stock) VALUES('$name', '$desc', '$price', '$stock')";
 $query = $db->query($sql);
 
 
@@ -69,13 +69,13 @@ else {
 
 if ($size == "Standard") {
 		$cat = "No cat.";
-		$sql = "INSERT INTO product_details(product_code, category, size) VALUES ('$last_id', '$cat', '$size')";
+		$sql = "INSERT INTO `{$dbname}`.`product_details` (product_code, category, size) VALUES ('$last_id', '$cat', '$size')";
 		$query = $db->query($sql);
 
 }
 else {
 		foreach ($size as $size_Temp) {
-		$sql = "INSERT INTO product_details(product_code, category, size) VALUES ('$last_id', '$cat', '$size_Temp')";
+		$sql = "INSERT INTO `{$dbname}`.`product_details` (product_code, category, size) VALUES ('$last_id', '$cat', '$size_Temp')";
 		$query = $db->query($sql);
 
 	}
@@ -90,8 +90,8 @@ else {
 	$uploadError = true;
 
 	// the directories 
-	$primaryDir = $_SERVER['DOCUMENT_ROOT']."store/images/products/";
-	$secondaryDir = $_SERVER['DOCUMENT_ROOT'].'store/images/uploads/product_imgs/';
+	$primaryDir = $_SERVER['DOCUMENT_ROOT']."../../images/products/";
+	$secondaryDir = $_SERVER['DOCUMENT_ROOT'].'../../images/uploads/product_imgs/';
 
 	// the max file size 
 	$maxfilesize = 5000000;
@@ -210,7 +210,7 @@ else {
 
 if ($uploadError) {
 	print "<h3>Item Succesfully Added</h3>";
-	print "<a href='/store/admin/'>GO BACK!</a>";
+	print "<a href='..'>GO BACK!</a>";
 }
 else {
 	print $response;
