@@ -239,35 +239,35 @@ typography
     font-family: 'Helvetica-Light';
     font-style: normal;
     font-weight: normal;
-    src: url('http://localhost/e-commerce-site/fonts/HelveticaNeueLTStd-Lt.otf');
+    src: url('http://localhost/fonts/HelveticaNeueLTStd-Lt.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-UltraLight';
     font-style: normal;
     font-weight: normal;
-    src: url('http://localhost/e-commerce-site/fonts/HelveticaNeueLTStd-UltLt.otf');
+    src: url('http://localhost/fonts/HelveticaNeueLTStd-UltLt.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-Thin';
     font-style: normal;
     font-weight: normal;
-    src: url('http://localhost/e-commerce-site/fonts/HelveticaNeueLTStd-Th.otf');
+    src: url('http://localhost/fonts/HelveticaNeueLTStd-Th.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-Medium';
     font-style: normal;
     font-weight: normal;
-    src: url('http://localhost/e-commerce-site/fonts/HelveticaNeueLTStd-Md.otf');
+    src: url('http://localhost/fonts/HelveticaNeueLTStd-Md.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-Bold';
     font-style: normal;
     font-weight: normal;
-    src: url('http://localhost/e-commerce-site/fonts/HelveticaNeueLTStd-Bd.otf');
+    src: url('http://localhost/fonts/HelveticaNeueLTStd-Bd.otf');
 }
 
 
@@ -559,7 +559,7 @@ header
 */
 
 #header-super-wrapper {
-    background: url('http://localhost/e-commerce-site/images/site/header.png') center center no-repeat;
+    background: url('http://localhost/images/site/header.png') center center no-repeat;
     margin-top: 70px;
     padding: 120px 0px;
 }
