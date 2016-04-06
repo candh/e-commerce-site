@@ -1,5 +1,5 @@
-ErrorDocument 500 /errors/internal-server-error.html
-ErrorDocument 404 http://localhost/store/errors/error404.php
+ErrorDocument 500 errors/internal-server-error.html
+ErrorDocument 404 errors/error404.php
 
 RewriteEngine On
 RewriteRule ^products/([^/]*)/([^/]*)$ products.php?v=$1&cat=$2 [L]

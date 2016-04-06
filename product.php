@@ -67,14 +67,14 @@ else {
                                 <div class='productView-left big_img_wrap '>
                                     <div class='focusWindow'>
 
-                                          <img class='imgFocus' src='/store/images/products/$imgpath'> 
+                                          <img class='imgFocus' src='images/products/$imgpath'> 
 
                                     </div>
 
                                     <div id='mini_img_gallery_wrapper'>
                                         <p style='font-size:13px;'>More images for this product :</p>
                                         <br/>
-                                         <img class='activeImg' src='/store/images/products/$imgpath'> 
+                                         <img class='activeImg' src='images/products/$imgpath'> 
                                     ";
 
 
@@ -86,7 +86,7 @@ else {
                                         while ($row = $query->fetch_assoc()) {
                                             $img_path = $row['img_path'];
 
-                                            print "<img src='/store/images/uploads/product_imgs/$img_path'>";
+                                            print "<img src='images/uploads/product_imgs/$img_path'>";
 
                                         }
                                     }
@@ -115,7 +115,7 @@ else {
                                         if ($current_stock > 1) {                                    
                                         print "
                                        <div id='qtySelect'>
-                                       <form method='post' action='/store/processing/cart_submit.php' class='cartsubmitAjax'>
+                                       <form method='post' action='processing/cart_submit.php' class='cartsubmitAjax'>
                                          Quantity: <br/>";
                                             print "<select name='qty' id='qty'>";
                                             for ($i=1; $i < $current_stock ; $i++) { 
@@ -157,7 +157,7 @@ else {
                                 else {
                                     print "
                                     <div id='qtySelect'>
-                                       <form method='post' action='/store/processing/cart_submit.php' class='cartsubmitAjax'>
+                                       <form method='post' action='processing/cart_submit.php' class='cartsubmitAjax'>
                                        Quantity:<br/>";
                                            print "<select name='qty' id='qty'>";
                                             for ($i=0; $i < $current_stock ; $i++) { 
@@ -198,7 +198,7 @@ else {
 
             </div>
         </section>
-        <div id='nav-links'><a href='/store'>Store</a> <i class='fa fa-angle-right'></i> <a href='/store/products/all/box'>Products</a> <i class='fa fa-angle-right'></i> <a href='/store/product/$productId/$productNameUrl'>$productName</a></div>
+        <div id='nav-links'><a href='/'>Store</a> <i class='fa fa-angle-right'></i> <a href='products/all/box'>Products</a> <i class='fa fa-angle-right'></i> <a href='product/$productId/$productNameUrl'>$productName</a></div>
 
         ";
     }
@@ -209,7 +209,7 @@ else {
                     <div class='nopr-content' style='margin-top:120px;'>
                     <h4>Sorry, This product couldn't be found</h4>
                     <hr/>
-                    <a href='/store'><p>You can go back and browse more...</p></a>
+                    <a href='><p>You can go back and browse more...</p></a>
                     </div>
                 </div>
             </div>
