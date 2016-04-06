@@ -276,7 +276,7 @@ $(document).ready(function() {
     $('.remove').click(function() {
         var id = $(this).data('action');
         var method = "POST",
-            url = "processing/view_cart.php",
+            url = "/processing/view_cart.php",
             action = "remove";
 
         data = {
