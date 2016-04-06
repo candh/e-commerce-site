@@ -47,6 +47,7 @@ else {
     }
 
 
+
     $sql = "SELECT * FROM products WHERE product_code = $productId";
     $query = $db->query($sql);
     if ($query->num_rows > 0) {
@@ -115,7 +116,7 @@ else {
                                         if ($current_stock > 1) {                                    
                                         print "
                                        <div id='qtySelect'>
-                                       <form method='post' action='processing/cart_submit.php' class='cartsubmitAjax'>
+                                       <form method='post' action='/processing/cart_submit.php' class='cartsubmitAjax'>
                                          Quantity: <br/>";
                                             print "<select name='qty' id='qty'>";
                                             for ($i=1; $i < $current_stock ; $i++) { 
@@ -157,7 +158,7 @@ else {
                                 else {
                                     print "
                                     <div id='qtySelect'>
-                                       <form method='post' action='processing/cart_submit.php' class='cartsubmitAjax'>
+                                       <form method='post' action='/processing/cart_submit.php' class='cartsubmitAjax'>
                                        Quantity:<br/>";
                                            print "<select name='qty' id='qty'>";
                                             for ($i=0; $i < $current_stock ; $i++) { 

@@ -13,7 +13,7 @@
 
     <div id="cart" class="text-right">
         <div class="cart-icon">
-            <img src="images/cart.svg">
+            <img src="/images/cart.svg">
         </div>
         <div class="items-qty-prev">
     <?php
@@ -54,8 +54,8 @@
             $productSize = $row['size'];
 
             $productNameUrl = formatUrl($productName);
-       	print "<div class='product$cntr'>
-                <p><a href='product/$product_id/$productNameUrl'><b>$productName</b> ($productQty) — ($productSize)</a></p>
+       	print "<div class='/product$cntr'>
+                <p><a href='/product/$product_id/$productNameUrl'><b>$productName</b> ($productQty) — ($productSize)</a></p>
                 <p class='cart-price'><b>$$productPrice</b></p>
               </div>";
               $cntr++;
@@ -93,7 +93,7 @@
             </div>
 
             <div id='checkout'>
-                <a href='cart'><button>Checkout</button></a>
+                <a href='/cart'><button>Checkout</button></a>
             </div>";
 
 

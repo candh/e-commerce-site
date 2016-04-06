@@ -14,7 +14,7 @@
 				<div class='globalerror-content'>
 				<h5>Uh-oh! There are no items in your cart to view this page.</h5>
 				<p>You must go back and shop!</p><br/>
-				<p class='back'><a href='/store/'>Go back</a></p>
+				<p class='back'><a href='/'>Go back</a></p>
 				</div>
 			  </div>";
 		exit;
@@ -25,7 +25,7 @@
 				<div class='globalerror-content'>
 				<h5>Uh-oh! There's an error</h5>
 				<p>You must go back</p><br/>
-				<p class='back'><a href='/store/'>Go back</a></p>
+				<p class='back'><a href='/'>Go back</a></p>
 				</div>
 			  </div>";
 		exit;
@@ -37,7 +37,7 @@
 	<title>Checkout</title>
 </head>
 <body>
-	<?php include 'elements/nav.php';?>
+	<?php include '/elements/nav.php';?>
 	<div id="warning" class="warning"></div>
 	<section id="view_items_cart_wrapper">
 		<div class="row">
@@ -78,11 +78,11 @@
 							$current_stock = $row['stock'];
 
 							print "<tr id='$item_code'>
-							<td><img src='/store/images/products/$imgpath'></td>
+							<td><img src='/images/products/$imgpath'></td>
 							<td>$item_name</td>
 							<td>$item_price</td>
 							<td>
-								<form method='post' action='/store/processing/view_cart.php' class='update_qty_ajax' id='form_id_$item_code'>
+								<form method='post' action='/processing/view_cart.php' class='update_qty_ajax' id='form_id_$item_code'>
 									<select name='qty' id='qty'>
 										<option value='$item_qty'>$item_qty</option>
 										";
@@ -96,7 +96,7 @@
 							</td>
 
 							<td>
-								<form method='post' action='/store/processing/view_cart.php' class='update_size_ajax' id='form_size_id_$item_code'>
+								<form method='post' action='/processing/view_cart.php' class='update_size_ajax' id='form_size_id_$item_code'>
 									<select name='size' id='size'>
 										<option value='$item_size_cur'>$item_size_cur</option>
 										";
@@ -134,7 +134,7 @@
 						<div class="eight candh">
 					<div class="proceed-checkbox">
 						<br/>
-						<a href="/store/checkout/1/">
+						<a href="/checkout/1/">
 							<button id="checkout">Proceed To Checkout</button>
 						</a>
 					</div>

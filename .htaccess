@@ -4,7 +4,7 @@ ErrorDocument 404 errors/error404.php
 RewriteEngine On
 RewriteRule ^products/([^/]*)/([^/]*)$ products.php?v=$1&cat=$2 [L]
 RewriteRule ^product/([^/]*)/([^/]*)$ product.php?id=$1&title=$2 [L]
-RewriteRule ^cart$ /store/view_cart.php [L]
-RewriteRule ^checkout/1/$ /store/checkout/checkout.php [L]
-RewriteRule ^checkout/2/$ /store/checkout/checkout2.php [L]
-RewriteRule ^checkout/3/$ /store/checkout/checkout3.php [L]
+RewriteRule ^cart$ /view_cart.php [L]
+RewriteRule ^checkout/1/$ /checkout/checkout.php [L]
+RewriteRule ^checkout/2/$ /checkout/checkout2.php [L]
+RewriteRule ^checkout/3/$ /checkout/checkout3.php [L]

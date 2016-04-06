@@ -46,7 +46,7 @@ $(document).ready(function() {
     // please make this script work. Thanks. 
     // 
 
-    $('#ajaxcart').load('elements/ajaxcart.php');
+    $('#ajaxcart').load('/elements/ajaxcart.php');
     $('form.cartsubmitAjax').on('submit', function(e) {
         e.preventDefault();
         /* Act on the event */
@@ -139,7 +139,7 @@ $(document).ready(function() {
             }).done(function() {
 
 
-                $('#ajaxcart').load('elements/ajaxcart.php');
+                $('#ajaxcart').load('/elements/ajaxcart.php');
             });
         }
 
@@ -214,7 +214,7 @@ $(document).ready(function() {
                 });
             }
         }).done(function() {
-            $('#ajaxcart').load('elements/ajaxcart.php');
+            $('#ajaxcart').load('/elements/ajaxcart.php');
             calculateAjax();
         });
 
@@ -265,7 +265,7 @@ $(document).ready(function() {
                 });
             }
         }).done(function() {
-            $('#ajaxcart').load('elements/ajaxcart.php');
+            $('#ajaxcart').load('/elements/ajaxcart.php');
             calculateAjax();
         });
 
@@ -295,7 +295,7 @@ $(document).ready(function() {
 
                 },
             }).done(function() {
-                $('#ajaxcart').load('elements/ajaxcart.php');
+                $('#ajaxcart').load('/elements/ajaxcart.php');
                 calculateAjax();
             });
 

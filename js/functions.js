@@ -79,7 +79,7 @@ function validateCart(qty, product_id) {
 function calculateAjax() {
     var calculate = $('#sum');
     $.ajax({
-        url: 'processing/calculator.php',
+        url: '/processing/calculator.php',
         type: 'POST',
         data: {
             param1: 'value1'
