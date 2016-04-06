@@ -11,6 +11,10 @@
 		exit; 
 	}
 
+
+	// INITIALIZATION LOGIC
+	$rootDir = dirname(__FILE__);
+
 	// server timestamps
 	$server_timezone = date_default_timezone_set('Asia/Karachi');
 	$current_timestamp = date('m-d-Y, l, h:i:s a');
