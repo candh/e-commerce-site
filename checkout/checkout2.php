@@ -14,7 +14,7 @@
 				<div class='globalerror-content'>
 				<h5>Uh-oh! There's an error.</h5>
 				<p>You must go back!</p><br/>
-				<p class='back'><a href='/store/'>Go back</a></p>
+				<p class='back'><a href='/'>Go back</a></p>
 				</div>
 			  </div>";
 		exit;
@@ -24,7 +24,7 @@
 				<div class='globalerror-content'>
 				<h5>Uh-oh! Please fill the entire form.</h5>
 				<p>You must go back!</p><br/>
-				<p class='back'><a href='/store/checkout/1/'>Go back</a></p>
+				<p class='back'><a href='/checkout/1/'>Go back</a></p>
 				</div>
 			  </div>";
 	$response = "";
@@ -96,7 +96,7 @@
 							$imgpath = $row['img'];
 							$subtotal = $subtotal + $item_price * $item_qty;
 							print"<tr id='$item_code'>
-							<td><img src='/store/images/products/$imgpath'></td>
+							<td><img src='/images/products/$imgpath'></td>
 							<td>$item_code</td>
 							<td>$item_name</td>
 							<td>$$item_price</td>
@@ -193,7 +193,7 @@
 				</div>
 
 				<div class="hidden_form">
-					<form method="post"action="/store/checkout/3/">					<input type="hidden" name="first_name" maxlength="40" size="40" value="<?php print $first_name?>">
+					<form method="post"action="/checkout/3/">					<input type="hidden" name="first_name" maxlength="40" size="40" value="<?php print $first_name?>">
 					<input type="hidden" name="last_name" maxlength="40"  size="40" value="<?php print $last_name?>">
 					<input type="hidden" name="shipping_address"  size="80" placeholder='Shipping Address 1' value="<?php print $shipping_address_1?>"><br/>
 					<input type="hidden" name="shipping_address2" size="80" placeholder='Shipping Address 2' value="<?php print $shipping_address_2?>"> 
