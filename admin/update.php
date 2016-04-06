@@ -11,7 +11,7 @@
 			<br/>
 			<h4>You do not have the permission to view this page</h4><br/>
 			<p>You better go back now!</p><br/>
-			<p id='back'><a href='http://localhost/store/'>Back</a></p>
+			<p id='back'><a href='/'>Back</a></p>
 			</div>
 			</div>";
 			exit;
@@ -34,7 +34,7 @@
 		}
 		else {
 			$response .="<div style='margin:50px;'><h4>No items with this ID</h4>
-						<a href='/store/admin/update.php'>Go Back</a></div>";
+						<a href='/admin/update.php'>Go Back</a></div>";
 			print $response;
 			exit;
 		}
@@ -83,8 +83,8 @@
 	$uploadError = true;
 
 	// the directories 
-	$primaryDir = $_SERVER['DOCUMENT_ROOT']."store/images/products/";
-	$secondaryDir = $_SERVER['DOCUMENT_ROOT'].'store/images/uploads/product_imgs/';
+	$primaryDir = $_SERVER['DOCUMENT_ROOT']."images/products/";
+	$secondaryDir = $_SERVER['DOCUMENT_ROOT'].'images/uploads/product_imgs/';
 
 	// the max file size 
 	$maxfilesize = 5000000;
@@ -301,7 +301,7 @@
 												$primaryImgId = $row['product_code'];
 												
 												print "<tr id='primaryImg_$primaryImgId'>
-												<td class='primaryImg'><img src='/store/images/products/$primaryImg'></td>
+												<td class='primaryImg'><img src='/images/products/$primaryImg'></td>
 												<td><i class='fa fa-2x fa-close remove' data-type='primary' data-id='$primaryImgId'></i></td>
 												</tr>";
 											}
@@ -319,7 +319,7 @@
 												$secondaryImgPath = $row['img_path'];
 
 										print "<tr id='$secondaryImgId'>
-											  <td class='secondaryImg'><img src='/store/images/uploads/product_imgs/$secondaryImgPath'></td>
+											  <td class='secondaryImg'><img src='/images/uploads/product_imgs/$secondaryImgPath'></td>
 											  <td><i class='fa fa-2x fa-close remove' data-type='secondary' data-id='$secondaryImgId'></i></td>
 											  </tr>";
 											}

@@ -39,7 +39,7 @@ if ($query->num_rows > 0) {
 
 		<tr>
 			<td>$product_code</td>
-			<td><img src='/store/images/products/$img'></td>
+			<td><img src='/images/products/$img'></td>
 			<td>$name</td>
 			<td>$$price</td>
 		</tr>
