@@ -21,4 +21,4 @@ Next up, start a apache server on the folder and visit localhost in browser!
 
 #Credits
 Made by [Haider Ali](http://www.haidrr.com) with love (duh!) in Pakistan
-Special thanks to [Anas Ismail](http://anasismail.com) for fixing up the crazy paths
+Special thanks to [Anas Ismail](http://anasismail.com) for fixing up the crazy paths and some queries
