@@ -25,7 +25,7 @@
 	?>
     <!-- STICKY NAVIGATIONS -->
     <?php
-	include '/elements/nav.php';
+	include 'elements/nav.php';
 	?>
             <!-- END STICKY NAVIGATION -->
 

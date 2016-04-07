@@ -37,7 +37,7 @@
 	<title>Checkout</title>
 </head>
 <body>
-	<?php include '/elements/nav.php';?>
+	<?php include 'elements/nav.php';?>
 	<div id="warning" class="warning"></div>
 	<section id="view_items_cart_wrapper">
 		<div class="row">
