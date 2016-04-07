@@ -1,9 +1,9 @@
-# [e-commerce-site](https://www.behance.net/gallery/32503241/An-E-commerce-website)
+# [e-commerce-site](http://candh-e-shop.base.pk/)
 It's a e-commerce website made with PHP, MySQL, HTML5, jQuery, Javascript.
 
 [Live Demo](http://candh-e-shop.base.pk/)
-[Behance](https://www.behance.net/gallery/32503241/An-E-commerce-website)
 
+[Behance](https://www.behance.net/gallery/32503241/An-E-commerce-website)
 
 # How ? 
 Well, it's a pretty big project so I can't really put up en entire documentation. Although it's not that complex. You should be able to find your way. Or just tweet me! [@candhforlife](http://twitter.com/candhforlife)
@@ -14,6 +14,11 @@ I made this site. Okay, cool. But I didn't know how to sell it. And tbh couldn't
 
 
 # But really dude, give me some idea...
-Well, you need to set up your database for it to work. I created a database dump. I contains all the information about the tables. Just create a new database name "store" or something and import the **store.sql file found in database** folder of the project. 
+All you have to do setup your database. Just import the store.sql file in the setup dir. 
 
 Next up, start a apache server on the folder and visit localhost in browser!
+
+
+#Credits
+Made by [Haider Ali](http://www.haidrr.com) with love (duh!) in Pakistan
+Special thanks to [Anas Ismail](http://anasismail.com) for fixing up the crazy paths
