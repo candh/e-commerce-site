@@ -73,7 +73,7 @@ if ($action == "Confirm Remove") {
 
 
 
-			$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."store/images/products/";
+			$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."/images/products/";
 			// deleting the current primary image
 			$deleteDir = $primaryDirHandle.$img;
 			if (file_exists($deleteDir)) {
@@ -94,7 +94,7 @@ if ($action == "Confirm Remove") {
 				$tmp_img_path = $row['img_path'];
 
 
-				$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."store/images/uploads/product_imgs/";
+				$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."/images/uploads/product_imgs/";
 				// deleting the secondary image from the machine
 				$deleteDir = $primaryDirHandle.$tmp_img_path;
 				unlink($deleteDir);

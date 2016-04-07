@@ -20,7 +20,7 @@
 		}
 	}
 
-	$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."store/images/uploads/product_imgs/";
+	$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."/images/uploads/product_imgs/";
 	$deleteDir = $primaryDirHandle.$img;
 	if (file_exists($deleteDir)) {
 		unlink($deleteDir);
@@ -48,7 +48,7 @@
 				$img = $row['img'];
 			}
 		}
-		$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."store/images/products/";
+		$primaryDirHandle = $_SERVER['DOCUMENT_ROOT']."/images/products/";
 		$deleteDir = $primaryDirHandle.$img;
 		if (file_exists($deleteDir)) {
 				unlink($deleteDir);

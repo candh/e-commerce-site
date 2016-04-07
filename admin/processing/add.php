@@ -90,8 +90,8 @@ else {
 	$uploadError = true;
 
 	// the directories 
-	$primaryDir = $rootDir."/images/products/";
-	$secondaryDir = $rootDir.'/images/uploads/product_imgs/';
+	$primaryDir = $_SERVER['DOCUMENT_ROOT']."/images/products/";
+	$secondaryDir = $_SERVER['DOCUMENT_ROOT'].'/images/uploads/product_imgs/';
 
 	// the max file size 
 	$maxfilesize = 5000000;
