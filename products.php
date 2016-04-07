@@ -28,7 +28,7 @@ $error = "<div class='globalerror'><div class='globalerror-content'><h5>Uh-oh! T
     ?>
     <!-- STICKY NAVIGATIONS -->
     <?php
-	include '/elements/nav.php';
+	include 'elements/nav.php';
 	?>
       <!-- END STICKY NAVIGATION -->
 
