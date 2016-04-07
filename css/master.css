@@ -239,35 +239,35 @@ typography
     font-family: 'Helvetica-Light';
     font-style: normal;
     font-weight: normal;
-    src: url('/store/fonts/HelveticaNeueLTStd-Lt.otf');
+    src: url('/fonts/HelveticaNeueLTStd-Lt.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-UltraLight';
     font-style: normal;
     font-weight: normal;
-    src: url('/store/fonts/HelveticaNeueLTStd-UltLt.otf');
+    src: url('/fonts/HelveticaNeueLTStd-UltLt.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-Thin';
     font-style: normal;
     font-weight: normal;
-    src: url('/store/fonts/HelveticaNeueLTStd-Th.otf');
+    src: url('/fonts/HelveticaNeueLTStd-Th.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-Medium';
     font-style: normal;
     font-weight: normal;
-    src: url('/store/fonts/HelveticaNeueLTStd-Md.otf');
+    src: url('/fonts/HelveticaNeueLTStd-Md.otf');
 }
 
 @font-face {
     font-family: 'Helvetica-Bold';
     font-style: normal;
     font-weight: normal;
-    src: url('/store/fonts/HelveticaNeueLTStd-Bd.otf');
+    src: url('/fonts/HelveticaNeueLTStd-Bd.otf');
 }
 
 
@@ -559,7 +559,7 @@ header
 */
 
 #header-super-wrapper {
-    background: url('/store/images/site/header.png') center center no-repeat;
+    background: url('/images/site/header.png') center center no-repeat;
     margin-top: 70px;
     padding: 120px 0px;
 }

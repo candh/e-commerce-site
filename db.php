@@ -12,6 +12,8 @@
 	}
 
 
+	// INITIALIZATION LOGIC
+	$rootDir = dirname(__FILE__);
 
 	// server timestamps
 	$server_timezone = date_default_timezone_set('Asia/Karachi');

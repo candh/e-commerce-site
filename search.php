@@ -25,7 +25,7 @@ print "<br/>";
     print "<br/>";
     print "<br/>";
     print "<h5>Please enter a search query</h5>";
-    print "<a href='/store'><h6> &larr; Go Back<h6></a>";
+    print "<a href='/'><h6> &larr; Go Back<h6></a>";
     print "</div>";
     exit;
 }
@@ -47,7 +47,7 @@ print "<br/>";
     print "<br/>";
 
     print "<h5>Search Query is too long</h5>";
-        print "<a href='/store'><h6> &larr; Go Back<h6></a>";
+        print "<a href='/'><h6> &larr; Go Back<h6></a>";
 
     print "</div>";
     exit;
@@ -104,13 +104,13 @@ $result = $stmt->get_result();
                 $init_product.="<div class='product-card-wrapper'>\n";
                     $init_product.="<div class='product-card-content'>\n";
                         $init_product.="<div class='product-img-wrapper'>\n";
-                            $init_product.="<img src='/store/images/products/$imgpath'>\n";
+                            $init_product.="<img src='/images/products/$imgpath'>\n";
                         $init_product.="</div>\n";
                         $init_product.="<div class='product-bottom-content'>\n";
 
                             $init_product.="<h6>$productName</h6>";
                             $init_product.="<p class='price'>Price : <b>$$productPrice</b></p>\n";
-                            $init_product.="<a href='/store/product/$productId/$urlTitle'>\n";
+                            $init_product.="<a href='/product/$productId/$urlTitle'>\n";
                                 $init_product.="<button class='buynow'>BUY NOW</button>\n";
                             $init_product.="</a>\n";
                         
@@ -136,7 +136,7 @@ $result = $stmt->get_result();
             // shabash my nigga. you did this. Celebrate
         }
     }	else {
-		print "<div class='row'><div class='eight candh push-by-two text-center'><h6>Uh-oh! We're sorry for that. <br/> No results found for your search query</h6><br/><br/><a href='/store'><h6> &larr; Go Back<h6></a></div></div>";
+		print "<div class='row'><div class='eight candh push-by-two text-center'><h6>Uh-oh! We're sorry for that. <br/> No results found for your search query</h6><br/><br/><a href='/'><h6> &larr; Go Back<h6></a></div></div>";
 	
     }
 

@@ -25,7 +25,7 @@ $(document).ready(function() {
                 success: function(response) {
                     $('#warning').html(response).fadeIn('fast');
                     if (response == "Successfully Logged In") {
-                        window.location.assign("../admin/index.php");
+                        window.location.assign("/admin/index.php");
                     }
                 },
             });
@@ -211,7 +211,7 @@ $(document).ready(function() {
         }
 
         $.ajax({
-            url: '/store/admin/processing/inventory_submit.php',
+            url: '/admin/processing/inventory_submit.php',
             type: 'POST',
             data: data,
             success: function(response) {

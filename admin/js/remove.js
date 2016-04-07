@@ -8,7 +8,7 @@ $(document).ready(function() {
         if (type == "primary") {
             if (confirm('Do you really want to remove this image?')) {
                 $.ajax({
-                        url: '/store/admin/processing/removeSecImg.php',
+                        url: '/admin/processing/removeSecImg.php',
                         type: 'post',
                         data: {
                             img_id: id,
@@ -26,7 +26,7 @@ $(document).ready(function() {
         } else {
             if (confirm('Do you really want to remove this image?')) {
                 $.ajax({
-                        url: '/store/admin/processing/removeSecImg.php',
+                        url: '/admin/processing/removeSecImg.php',
                         type: 'post',
                         data: {
                             img_id: id,

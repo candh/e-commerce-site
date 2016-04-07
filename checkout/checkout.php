@@ -15,7 +15,7 @@
 				<div class='globalerror-content'>
 				<h5>There are no items in your cart to checkout</h5>
 				<p>You must go back and add items in your cart.</p><br/>
-				<p class='back'><a href='/store/'>Go back</a></p>
+				<p class='back'><a href='/'>Go back</a></p>
 				</div>
 			  </div>";
 		exit;
@@ -26,7 +26,7 @@
 				<div class='globalerror-content'>
 				<h5>Uh-oh! There's an error.</h5>
 				<p>You must go back</p><br/>
-				<p class='back'><a href='/store/'>Go back</a></p>
+				<p class='back'><a href='/'>Go back</a></p>
 				</div>
 			  </div>";
 		exit;
@@ -71,7 +71,7 @@
 				<p>Carefully fill the form below for us to process your order</p>
 				</div>
 				<br/>
-				<form method="post"action="/store/checkout/2/" class="checkout_form_validate">
+				<form method="post"action="/checkout/2/" class="checkout_form_validate">
 					<p>First Name :</p>
 					<input type="text" name="first_name"  class="required" id="first_name" maxlength="40" size="40">
 

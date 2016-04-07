@@ -30,8 +30,13 @@
 	$stmt->bind_param('ss', $username, $pswd);
 	$stmt->execute();
 */
-$q = "SELECT `username` FROM `{$dbname}`.`users` WHERE `username` = '".$username."' AND `pswd` = '".$pswd."'";
-//$q = "SELECT * FROM `harshitc_candheshop`.`users` WHERE `username` = '{$username}' AND `pswd` = '{$pswd}'";
+
+$q = "SELECT `username` FROM `{$db_name}`.`users` WHERE `username` = '".$username."' AND `pswd` = '".$pswd."'";
+
+// WHAT THE FUCK NIGGA? WHAT'S this {$dbname} bullshit? It's not even fucking defined anywhere. I'm so mad
+// If you were trying to refrence the $db_name, you better prepare your body bag cuz nigga you missed a motherfucking underscore
+
+
 $result = $db->query($q);
 	if ($result->num_rows > 0) {
 		$response .= "Successfully Logged In";

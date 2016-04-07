@@ -67,13 +67,13 @@ $error = "<div class='globalerror'><div class='globalerror-content'><h5>Uh-oh! T
                 $init_product.="<div class='product-card-wrapper'>\n";
                     $init_product.="<div class='product-card-content'>\n";
                         $init_product.="<div class='product-img-wrapper'>\n";
-                            $init_product.="<img src='/store/images/products/$imgpath'>\n";
+                            $init_product.="<img src='/images/products/$imgpath'>\n";
                         $init_product.="</div>\n";
                         $init_product.="<div class='product-bottom-content'>\n";
 
                             $init_product.="<h6 class='product_name'>$productName</h6>";
                             $init_product.="<p class='price'><b>$$productPrice</b></p>\n";
-                            $init_product.="<a href='/store/product/$productId/$urlTitle'>\n";
+                            $init_product.="<a href='/product/$productId/$urlTitle'>\n";
                                 $init_product.="<button class='buynow'>BUY NOW</button>\n";
                             $init_product.="</a>\n";
                         
@@ -106,7 +106,7 @@ $error = "<div class='globalerror'><div class='globalerror-content'><h5>Uh-oh! T
                     <div class='nopr-content' style='margin-top:120px;'>
                     <h4>Sorry, This product couldn't be found</h4>
                     <hr/>
-                    <a href='/store'><p>You can go back and browse more...</p></a>
+                    <a href='/'><p>You can go back and browse more...</p></a>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ $error = "<div class='globalerror'><div class='globalerror-content'><h5>Uh-oh! T
     </section>
 
      <!-- footer -->
-    <?php include 'elements/footer.html';?>
+    <?php include '/elements/footer.html';?>
     <!-- end footer-->
     </body>
 

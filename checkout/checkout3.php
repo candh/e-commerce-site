@@ -13,7 +13,7 @@
 				<div class='globalerror-content'>
 				<h5>Uh-oh! There's an error.</h5>
 				<p>You must go back!</p><br/>
-				<p class='back'><a href='/store/'>Go back</a></p>
+				<p class='back'><a href='/'>Go back</a></p>
 				</div>
 			  </div>";
 		exit;
@@ -297,7 +297,7 @@
 							$item_size = $row['size'];
 							$imgpath = $row['img'];
 							print"<tr id='$item_code'>
-							<td><img src='/store/images/products/$imgpath'></td>
+							<td><img src='/images/products/$imgpath'></td>
 							<td>$item_code</td>
 							<td>$item_name</td>
 							<td>$$item_price</td>

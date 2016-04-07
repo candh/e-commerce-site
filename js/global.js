@@ -46,7 +46,7 @@ $(document).ready(function() {
     // please make this script work. Thanks. 
     // 
 
-    $('#ajaxcart').load('/store/elements/ajaxcart.php');
+    $('#ajaxcart').load('/elements/ajaxcart.php');
     $('form.cartsubmitAjax').on('submit', function(e) {
         e.preventDefault();
         /* Act on the event */
@@ -139,7 +139,7 @@ $(document).ready(function() {
             }).done(function() {
 
 
-                $('#ajaxcart').load('/store/elements/ajaxcart.php');
+                $('#ajaxcart').load('/elements/ajaxcart.php');
             });
         }
 
@@ -214,7 +214,7 @@ $(document).ready(function() {
                 });
             }
         }).done(function() {
-            $('#ajaxcart').load('/store/elements/ajaxcart.php');
+            $('#ajaxcart').load('/elements/ajaxcart.php');
             calculateAjax();
         });
 
@@ -265,7 +265,7 @@ $(document).ready(function() {
                 });
             }
         }).done(function() {
-            $('#ajaxcart').load('/store/elements/ajaxcart.php');
+            $('#ajaxcart').load('/elements/ajaxcart.php');
             calculateAjax();
         });
 
@@ -276,7 +276,7 @@ $(document).ready(function() {
     $('.remove').click(function() {
         var id = $(this).data('action');
         var method = "POST",
-            url = "/store/processing/view_cart.php",
+            url = "/processing/view_cart.php",
             action = "remove";
 
         data = {
@@ -295,7 +295,7 @@ $(document).ready(function() {
 
                 },
             }).done(function() {
-                $('#ajaxcart').load('/store/elements/ajaxcart.php');
+                $('#ajaxcart').load('/elements/ajaxcart.php');
                 calculateAjax();
             });
 
