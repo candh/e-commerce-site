@@ -1,5 +1,5 @@
 # [e-commerce-site](http://candh-e-shop.base.pk/)
-It's a e-commerce website made with PHP, MySQL, HTML5, jQuery, Javascript.
+It's an e-commerce website made with PHP, MySQL, HTML5, jQuery, Javascript.
 
 [Live Demo](http://candh-e-shop.base.pk/)
 
