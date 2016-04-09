@@ -21,8 +21,7 @@
 		exit;
 	}
 	else {
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+		$password = $_POST['newpass'];
 		$pswd = sha1($password);
 	}
 
@@ -42,6 +41,7 @@ $result = $db->query($q);
 		$response .= "Successfully Logged In";
 		while ($row = $result->fetch_assoc()) {
 			$_SESSION['login_token'] = sha1($row['username']);
+			$_SESSION['user'] = $row['username'];		
 		}
 	}
 	else {
