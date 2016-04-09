@@ -33,16 +33,7 @@
 							<p class="identifier">Process the customer's order here</p>
 							<br/>
 							<br/>
-							<div class="navigation">
-							<ul>
-							<a href='index.php' ><li  >Store</li></a>
-							<a href='customers.php'><li class="activeLink">Customers</li></a>
-							<a href='additems.php'><li>Add Item / Remove</li></a>
-							<a href="update.php"><li>Update Item</li></a>
-							<a href="inventory.php"><li>Inventory</li></a>
-							<a href="logout.php"><li>Log Out</li></a>
-							</ul>
-							</div>
+														<?php include('nav.php');?>
 						</nav>
 					</div>
 
