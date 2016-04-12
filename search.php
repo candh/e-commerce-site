@@ -30,7 +30,8 @@ print "<br/>";
     exit;
 }
 else {
-    $query = $_GET['search_query'];
+    $query = strip_tags($_GET['search_query']);
+
 }
 
 
