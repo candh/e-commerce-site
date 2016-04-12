@@ -39,7 +39,7 @@
 				<br/>
 
 				<div id="settings">	
-<h5 class="light title">Change Password:</h5>
+<h6 class="light title">Change Password:</h6>
 					<form method="post" action="processing/changepass.php">
 						<table>
 
