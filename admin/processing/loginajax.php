@@ -21,7 +21,7 @@
 		exit;
 	}
 	else {
-		$password = $_POST['newpass'];
+		$password = $_POST['password'];
 		$pswd = sha1($password);
 	}
 
