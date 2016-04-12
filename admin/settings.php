@@ -47,7 +47,7 @@
 				<tr><td><p>New:</td><td> <input type="password" maxlength='20' name="newpass" id="newpass"/></p></td></tr>
 			<tr><td><p>Retype New:</td><td><input type="password" maxlength='20' name="rnewpass" id="rnewpass"/></p></td></tr>
 <tr><td><input type="submit"/></td></tr>
-				<input type="hidden" value="<?php print $form_token ?>" name = "token" id="token">
+				<input type="hidden" value="<?php print $form_token; ?>" name = "token" id="token">
 				<tr>
 				</table>
 					<br/>	
