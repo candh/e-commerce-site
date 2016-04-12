@@ -1,4 +1,18 @@
 $(document).ready(function() {
+    
+
+    // 
+    // NAVIGATION
+    // 
+    var currentPage = window.location.href;
+    var res = currentPage.split("/");
+    var whichPage = res[res.length-1];
+    var pageName = whichPage.split(".php");
+    
+    $("#" + pageName[0]).addClass('activeLink');
+
+
+
     // 
     // LOGIN FORM AJAX 
     //
